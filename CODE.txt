@@ -1,0 +1,81 @@
+/*HTML*/
+
+<!DOCTYPE html>
+<html = lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>TELEMARKETING</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+
+	<img src="./images/logo/Syc motors camcar.png" height="150" alt="Logo de SYCMOTORS" style="margin: none">	
+
+	<header>
+		<nav> 
+			<ul>			
+				<li><a href="#inicio">INICIO</a></li>
+				<li><a href="#proceso">PROCESO</a></li>
+				<li><a href="#reporte">REPORTE</a></li>
+			</ul>
+		</nav>
+	</header>
+	<header style="text-align:center;">
+		<h1 style="color:#34495E;">SYCMOTORS</h1>
+	</header>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+/*CSS*/
+
+ /*BARRA DE NAVEGACION */
+ ul {
+  background-color: #333;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;/*ELIMINA LOS PUNTOS*/
+  box-shadow: -10px 10px 5px #888;   
+}
+ 
+
+/*MENU*/
+ a {
+  display:inline-block;
+  color: white;
+  text-align: center;
+  padding:14px 16px; 
+  text-decoration: none; /*QUITAR SUBRAYADO*/
+}
+
+  a:hover{
+  background-color:#525252;
+  color:white;
+}
+
+
+ a:active {
+  background-color:#4CAF50;
+  color:white; 
+  }
+
+  
+
+/*MEDIA QUERIES*/
+@media (max-width:400px) {
+  ul{
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de salida</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styleBtnesAzules.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script  src="JS/popup.js"></script>
+	
+
+</head>
+<body>
+
+	<div class="overlay" id="overlay" > <!--Overlay fondo oscuro -->
+		<div class="popup" id="popup"> <!--Pantalla emergente-->
+			<!--<div id="container_X"> -->
+				<a href="proceso" id="cerrar-popup" class="cerrar-popup"><i class="fas fa-times"></i></a> <!--La X -->
+			<!--</div> --> 
+
+			<h3>Registro de Salida</h3>
+
+			<form action="">
+				<div class="contenedor-inputs">
+					<!--Contenedor donde va estar todos los elementos de la pantalla emergente -->
+
+					<select name="select" id="seleccion">
+						<option value="Servicio" selected="Servicio">Servicio</option>
+						<option value="Ventas">Ventas Nuevos</option>
+					</select>
+
+					<input id="inputdate" type="date" name="date" placeholder="Fecha" min="2020-01-01" max="2059-12-31"> <!--value="2020-01-01"-->
+				</div>	
+					<input type="submit" name="BotonAceptar" class="boton_de_aceptar" value="Aceptar">				
+			</form>
+		</div>
+	</div>		
+
+
+
+</body>
+</html>

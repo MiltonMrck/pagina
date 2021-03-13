@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html = lang="es">
+<head>	
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="JS/popup.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<nav> 
+			<ul class="BotonesBarra">			
+				<li><a class="bmenu" href="index.html"><span class="glyphicon glyphicon-home"></span> INICIO</a></li>
+				<li><a class="bmenu" href="proceso.html"><span class="glyphicon glyphicon-list-alt"></span> PROCESO</a></li>
+				<li><a class="bmenu" href="#reporte"><span class="glyphicon glyphicon-file"></span> REPORTE</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="botons">
+
+		<a id = "BotonAzul" href="registro" class="btn btn-info btn-lg"   onclick="accion('1')">
+			<span class="glyphicon glyphicon-pencil" ></span> Registro de Salida </a>
+
+			<a id = "BotonAzul" href="#" class="btn btn-info btn-lg" onclick="accion('2')">
+				<span class="glyphicon glyphicon-check" ></span> Encuesta </a>
+
+				<a id="BotonAzul" href="#" class="btn btn-info btn-lg" onclick="accion('3')">
+					<span class="glyphicon glyphicon-phone-alt"></span>
+				Programar Llamada </a>
+
+			</div>
+
+			
+
+
+
+			<script>
+
+				function accion(precionar){
+
+					var elem = document.getElementById('BotonAzul');
+					elem = precionar;
+
+					if (precionar == 1) {
+
+						console.log("Presionaste el Boton de salida");
+					} else if(precionar==2){
+						console.log("Presionanste el boton encuesta");
+
+					}else if(precionar==3){
+						console.log("Presionanste el boton Programar Llamada");
+					}
+				}
+
+			</script>
+
+
+		</body>
+
+		</html>
+
+
+
+
+

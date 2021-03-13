@@ -1,0 +1,79 @@
+ /*BARRA DE NAVEGACION */
+ .BotonesBarra {
+  background-color: #333;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;/*ELIMINA LOS PUNTOS*/
+  box-shadow: -10px 10px 5px #888; 
+  text-decoration: none;  
+
+}
+
+/*MENU*/
+.bmenu {
+  display:inline-block;
+  color: white;
+  text-align: center;
+  padding:14px 16px; 
+  text-decoration: none; /*QUITAR SUBRAYADO*/
+}
+
+.bmenu:hover{
+  background-color:#525252;
+  color:white;
+  text-decoration: none;
+}
+
+
+.bmenu:active {
+  background-color:#4CAF50;
+  color:white;
+  text-decoration: none;  
+}
+
+.botons{
+ margin-top: 20px;
+/* margin: auto;*/
+
+}
+
+/*MEDIA QUERIES*/
+@media (max-width:400px) {
+  .BotonesBarra{
+    flex-direction: column;
+    position: fixed; /*barra bloqueada*/
+  }
+
+}
+
+
+
+ /*
+   li a:hover:not(.active)
+   hover efecto de mouse
+   clic activo es active
+
+  li a:hover:{
+  cursor: pointer;
+  background: #(color que quieras);
+  }
+   hover efecto de mouse
+   clic activo es active
+
+   */
+
+ /*list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+
+   li {
+  float: left;
+}
+*/
+
+/*
+mamrgin-bottom: 10px; --para que se separe del borde
+*/

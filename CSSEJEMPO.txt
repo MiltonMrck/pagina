@@ -1,0 +1,29 @@
+
+ /*.main-header {
+        list-style-type: none;
+        margin: 0px;
+        padding: 6px;
+        overflow: hidden;
+        background-color: #333;
+      }
+       .nav a {
+        float: left;
+      }
+      
+       .nav a {
+        display:inline-block;
+        color: white;
+        text-align: center;
+        padding: 5px 5px;
+        width: 13%;
+        text-decoration: none;
+      }
+      /* Change the link color on hover 
+      .actve  {
+      	background-color:#4CAF50;
+      	color:white;
+      }
+      .nav :hover:not(.active) {
+        background-color: #454545;
+        color:white;
+  */
