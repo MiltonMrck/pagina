@@ -10,10 +10,8 @@ body, html{
 }
 
 body {
-	background-image: url("../images/charlanc.png");
-	
+	background-image: url("../images/char-lanc.png");
 	/*min-height: 380px;*/
-
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -29,6 +27,16 @@ body {
 	padding: 16px;
 	color: #F5FFFA;
 	background-color: rgb(64,64,64);/*#808080*/
+}
+
+#mayus{
+	padding: 0px;
+	margin-top: 5px; 
+	margin-bottom: 18px;
+	border:none;
+	background-color: rgb(64,64,64);
+	font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';
+	color: #F5FFFA;
 }
 
 h1{

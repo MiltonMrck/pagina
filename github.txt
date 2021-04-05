@@ -27,5 +27,4 @@ git push -u origin main
 
 git add * 
 git commit -m "first commit"
-git remote add origin https://github.com/MiltonMrck/pagina.git
 git push -u origin main

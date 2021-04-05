@@ -21,36 +21,36 @@
 			
 			<!--Text Box CONTRASEÑA-->
 			<label for="contrasena"><b>Contraseña</b></label>
-			<input type="password"  name="contrasena" placeholder="Contraseña" required data-title="La tecla Bloq Mayús está activada" >
+			<input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required data-title="La tecla Bloq Mayús está activada" >
 
+			<!--BloqMays-->
 			<input type="text" name="texbox" id ="mayus"  readonly >
+
 
 			<!--BOTTON-->
 			<button type="submit" class="btn">Sesión</button>
 		</form>
+
 	</div>
 
 <!--SCRIPT PARA ACTIVAR MAYUS -->
 	<script type="text/javascript">
 
-
-
 		document.addEventListener( 'keydown', function( event ) {
 			var mayus = event.getModifierState && event.getModifierState( 'CapsLock' );
-  console.log( mayus ); //que será verdadero cuando presiones Bloq Mayus
-  if(mayus){
-  	/*alert('Bloq Mayus está activado.');*/
+  			console.log( mayus ); //que será verdadero cuando presiones Bloq Mayus
+  			if(mayus){
+  			/*alert('Bloq Mayus está activado.');*/
 
-  	$("#mayus").val('Se activo BloqMayus');
-  }
+  			$("#mayus").val('Se activo Bloq-Mayus');
+  			} 
+  			else{
+   				$("#mayus").val('');
+   		    }
 
-   else{
-   	$("#mayus").val('');
-   }
+		});
 
-});
-
-</script>
+	</script>
 
 
 </body>
