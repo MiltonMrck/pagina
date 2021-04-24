@@ -10,14 +10,16 @@
 
 }
 
-
 /*MENU*/
+
 .bmenu {
-  display:inline-block;
+  display:block;
   color: white;
   text-align: center;
   padding:14px 16px; 
   text-decoration: none; /*QUITAR SUBRAYADO*/
+  font-size: 16px;
+  font-family: 'Roboto';
 }
 
 .bmenu:hover{
@@ -26,6 +28,9 @@
   text-decoration: none;
 }
 
+.selec {
+  background-color: #4CAF50;
+}
 
 .bmenu:active {
   background-color:#4CAF50;

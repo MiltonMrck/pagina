@@ -24,7 +24,9 @@ git push -u origin main
 
 
 ////////////////DESPUES DE MODIFICACIONES///////////////////////////////
-
+direccionarte a la carpeta donde se localiza tu proyecto
+git branch -M main
+git push -u origin main
 git add * 
 git commit -m "first commit"
 git push -u origin main

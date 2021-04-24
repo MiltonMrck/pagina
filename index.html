@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--logo de login-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
 	<script  src="JS/popup.js" ></script>
 
@@ -19,9 +21,10 @@
 	<header>
 		<nav> 
 			<ul class="BotonesBarra">			
-				<li><a class="bmenu" href="index.html"><span class="glyphicon glyphicon-home"></span> INICIO</a></li>
-				<li><a class="bmenu" href="h.html"><span class="glyphicon glyphicon-list-alt"></span> PROCESO</a></li>
-				<li><a class="bmenu" href="#reporte"><span class="glyphicon glyphicon-file"></span> REPORTE</a></li>
+				<li><a class="bmenu" href="index"><span class="glyphicon glyphicon-home"></span> INICIO</a></li>
+				<li><a class="bmenu" href="h"><span class="glyphicon glyphicon-edit"></span> PROCESO</a></li>
+				<li><a class="bmenu" href="reporte"><span class="glyphicon glyphicon-file"></span> REPORTE</a></li>
+				<li id="cerrar"><a class="bmenu selec" href="Login"><span class="glyphicon glyphicon-user"></span> Cerrar sesion</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -40,7 +43,6 @@
 
 
 <!--class="click" onclick="accion()"-->
-
 	<!--<script>
 		function accion(){
 			if (INICIO == onclick) {

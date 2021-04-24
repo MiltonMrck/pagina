@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-		<meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>TELEMARKETING</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
@@ -9,45 +10,55 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="CSS/styleBtnesAzules.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" >
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--logo de login-->
+
+
 </head>
+
 <body>
-	<img src="./images/logo/Syc motors camcar.png" height="150" alt="Logo de SYCMOTORS" style="margin: none">	
+	<img src="./images/logo/Syc motors camcar.png" height="150" alt="Logo de SYCMOTORS" style="margin: none">
 
 	<header>
-		<nav> 
-			<ul class="BotonesBarra">			
-				<li><a class="bmenu" href="#index.html"><span class="glyphicon glyphicon-home"></span> INICIO</a></li>
-				<li><a class="bmenu" href="#h.html"><span class="glyphicon glyphicon-list-alt"></span> PROCESO</a></li>
+		<nav>
+			<ul class="BotonesBarra">
+				<li><a class="bmenu" href="index"><span class="glyphicon glyphicon-home"></span> INICIO</a></li>
+				<li><a class="bmenu" href="h"><span class="glyphicon glyphicon-list-alt"></span> PROCESO</a></li>
 				<li><a class="bmenu" href="#reporte"><span class="glyphicon glyphicon-file"></span> REPORTE</a></li>
-			
+
 			</ul>
 		</nav>
 	</header>
 
+	<!--Botones ya que ingrsas a la opcion *****PROCESO***** -->
+
 	<div class="botons">
 
-		<a id = "BotonAzul" href="#" class="btn btn-info btn-lg"   onclick="accion('1')">
-			<span class="glyphicon glyphicon-pencil" ></span> Registro </a>
+		<a id="BotonAzul" href="#" class="btn btn-info btn-lg" onclick="accion('1')">
+			<span class="glyphicon glyphicon-pencil"></span> Registro </a>
 
-			<a id = "BotonAzul" href="#" class="btn btn-info btn-lg" onclick="accion('2')">
-				<span class="glyphicon glyphicon-check" ></span> Encuesta </a>
+		<a id="BotonAzul" href="#" class="btn btn-info btn-lg" onclick="accion('2')">
+			<span class="glyphicon glyphicon-check"></span> Encuesta </a>
 
-				<a id="BotonAzul" href="#" class="btn btn-info btn-lg" onclick="accion('3')">
-					<span class="glyphicon glyphicon-phone-alt"></span>
-				Programar Llamada </a>
+		<a id="BotonAzul" href="#" class="btn btn-info btn-lg" onclick="accion('3')">
+			<span class="glyphicon glyphicon-phone-alt"></span>
+			Programar Llamada </a>
 
-			</div>
+	</div>
 
+	<!--OVERLAY (pantalla emergente)-->
 
-	<div class="overlay" id="overlay" > <!--Overlay fondo oscuro -->
-		<div class="popup" id="popup"> <!--Pantalla emergente-->
+	<div class="overlay" id="overlay">
+		<!--Overlay fondo oscuro -->
+		<div class="popup" id="popup">
+			<!--Pantalla emergente-->
 
 			<!--<div id="containerX">-->
-				<a href="h.html" id="cerrar-popup"><i class="fas fa-times"></i></a> <!--La X -->
-			<!--</div>--> 
+			<a href="h.html" id="cerrar-popup"><i class="fas fa-times"></i></a>
+			<!--La X -->
+			<!--</div>-->
 
 			<h3>Registro</h3>
 
@@ -60,35 +71,40 @@
 						<option value="Ventas">Ventas Nuevos</option>
 					</select>
 
-					<input id="inputdate" type="date" name="date" placeholder="Fecha" min="2020-01-01" max="2059-12-31"> <!--value="2020-01-01"-->
-				</div>	
-					<input type="submit" name="BotonAceptar" class="boton_de_aceptar" value="Aceptar">				
+					<input id="inputdate" type="date" name="date" placeholder="Fecha" min="2020-01-01" max="2059-12-31">
+					<!--value="2020-01-01"-->
+				</div>
+
+				<div class="alert alert-primary">
+					<strong>Primary!</strong> Indicates an important action.
+
+				</div>
+
+				<input type="submit" name="BotonAceptar" class="boton_de_aceptar" value="Aceptar">
 			</form>
 		</div>
-	</div>		
-<script src="JS/popup.js"></script>
-		<script>
+	</div>
 
-				function accion(precionar){
+	<!--JAVASCRIPT (para verificar en consola las opcion de los botones de PROCESO)-->
 
-					var elem = document.getElementById('BotonAzul');
-					elem = precionar;
+	<script src="JS/popup.js"></script>
+	<script>
+		function accion(precionar) {
 
-					if (precionar == 1) {
+			var elem = document.getElementById('BotonAzul');
+			elem = precionar;
 
-						console.log("Presionaste el Boton de salida");
-					} else if(precionar==2){
-						console.log("Presionanste el boton encuesta");
+			if (precionar == 1) {
+				console.log("Presionaste el Boton de Registro");
+			} else if (precionar == 2) {
+				console.log("Presionanste el boton encuesta");
 
-					}else if(precionar==3){
-						console.log("Presionanste el boton Programar Llamada");
-					}
-				}
-
-			</script>
-
-
-
+			} else if (precionar == 3) {
+				console.log("Presionanste el boton Programar Llamada");
+			}
+		}
+	</script>
 
 </body>
+
 </html>
