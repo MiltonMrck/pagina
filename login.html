@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
+
 	<title>Login</title>
-	<!--<meta name="viewport" content="width=device-width, inicial-scale=1">-->
 	<link rel="stylesheet" type="text/css" href="CSS/LoginStyle.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" >
+	<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	-->
 
 </head>
+
 <body>
 
-	<div class="bg-img" >
-		<form action="/action_page.php" class="container">
-			<h1>Sesión</h1>
+	<div>
+		<!--class="bg-img"-->
+		<form action="loginUser.php" method="POST" class="container"></form>">
+		<!--Donde se va a mandar el fromulario-->
+		<h1>Sesión</h1>
 
-			<!--Text Box USUARIO-->
-			<label for = "usuario"><b>Usuario</b></label>
-			<input type="text" name="usuario" placeholder="Entrar con un usuario" required autofocus="" >
-			
-			<!--Text Box CONTRASEÑA-->
-			<label for="contrasena"><b>Contraseña</b></label>
-			<input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required data-title="La tecla Bloq Mayús está activada" >
+		<!--Text Box USUARIO-->
+		<label for="usuario"><b>Usuario</b></label>
+		<input type="text" name="usuario" placeholder="Entrar con un usuario" required autofocus="">
 
-			<!--BloqMays-->
-			<input type="text" name="texbox" id ="mayus"  readonly >
+		<!--Text Box CONTRASEÑA-->
+		<label for="contrasena"><b>Contraseña</b></label>
+		<input type="password" id="contrasena" name="contrasena" placeholder="&#128272; Contraseña" required
+			data-title="La tecla Bloq Mayús está activada">
+
+		<!--BloqMays-->
+		<input type="text" name="texbox" id="mayus" readonly>
 
 
-			<!--BOTTON-->
-			<button type="submit" class="btn">Sesión</button>
+		<!--BOTTON-->
+		<button type="submit" class="btn">&#x1f513; Sesión</button>
 		</form>
 
 	</div>
 
-<!--SCRIPT PARA ACTIVAR MAYUS -->
+	<!--SCRIPT PARA ACTIVAR MAYUS -->
 	<script type="text/javascript">
+		document.addEventListener('keydown', function (event) {
+			var mayus = event.getModifierState && event.getModifierState('CapsLock');
+			console.log(mayus); //que será verdadero cuando presiones Bloq Mayus
+			if (mayus) {
+				/*alert('Bloq Mayus está activado.');*/
 
-		document.addEventListener( 'keydown', function( event ) {
-			var mayus = event.getModifierState && event.getModifierState( 'CapsLock' );
-  			console.log( mayus ); //que será verdadero cuando presiones Bloq Mayus
-  			if(mayus){
-  			/*alert('Bloq Mayus está activado.');*/
-
-  			$("#mayus").val('Se activo Bloq-Mayus');
-  			} 
-  			else{
-   				$("#mayus").val('');
-   		    }
+				$("#mayus").val('Se activo Bloq-Mayus');
+			} else {
+				$("#mayus").val('');
+			}
 
 		});
-
 	</script>
 
 
+
+
 </body>
+
 </html>
 
 <!--<input type="password" id="passwd" name="con" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" class="input-block-level" data-toggle="tooltip" data-trigger="manual" data-title="La tecla Bloq Mayús está activada" placeholder="Contrase&ntilde;a" autocomplete="off" required>-->

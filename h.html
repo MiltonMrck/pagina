@@ -63,7 +63,7 @@
 			<h3>Registro</h3>
 
 			<form action="">
-				<div class="contenedor-inputs">
+				<div class="cont_input">
 					<!--Contenedor donde va estar todos los elementos de la pantalla emergente -->
 
 					<select name="select" id="seleccion">
@@ -73,10 +73,17 @@
 
 					<input id="inputdate" type="date" name="date" placeholder="Fecha" min="2020-01-01" max="2059-12-31">
 					<!--value="2020-01-01"-->
+
+					<!--<div class="search-container">-->
+					<form action="/action_page.php">
+						<input type="text" placeholder="Buscar.." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+					<!--</div>-->
 				</div>
 
 				<div class="alert alert-primary">
-					<strong>Primary!</strong> Indicates an important action.
+					<strong>Aquí !</strong> van los registros.
 
 				</div>
 

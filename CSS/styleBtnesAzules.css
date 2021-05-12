@@ -30,96 +30,86 @@ h1{
 
 /*COMO PANTALLA EMERGENTE*/
 
-h3{
-	font-size: 25px;
-
+h3 {
+  padding: auto;
+  font-size: 25px;
 }
 
-.overlay{ /* para fondo gris */
-	background:rgba(0,0,0,.3); /* .3 que es el 30% Tranprencia*/
-	position: fixed; /*Para que abarque toda la pantalla*/
-	top: 0;	
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center; /*Alinear los elementos de forma vertical*/
-	justify-content: center; /*Alineqacion de forma horizontal*/
-	visibility: hidden;
+.overlay {
+  /* para fondo gris */
+  background: rgba(0, 0, 0, 0.3); /* .3 que es el 30% Tranprencia*/
+  position: fixed; /*Para que abarque toda la pantalla*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center; /*Alinear los elementos de forma vertical*/
+  justify-content: center; /*Alineqacion de forma horizontal*/
+  visibility: hidden;
 }
 
-.overlay.active{
-	visibility: visible;
+.overlay.active {
+  visibility: visible;
 }
 
-.popup{ /* Pantalla emergente */
-	background: #f8f8f8; /*Blanco */
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);/*Grosor de Sombreado .3  */
-	border-radius: 3px;
-	font-family: 'Roboto', sans-serif;
-	padding: 20px;
-	text-align: center;
-	width: 600px; /*Tamaño*/
-	height: 450px;
-	opacity: 0; /*para ocultar la ventana*/
-
-
+.popup {
+  /* Pantalla emergente */
+  background: #f8f8f8; /*Blanco */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4); /*Grosor de Sombreado .3  */
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px; /*Tamaño*/
+  height: 450px;
+  opacity: 0; /*para ocultar la ventana*/
+  border: none;
 }
 
- #cerrar-popup{/*boton para cerrar la pantalla */ 
- 	display: block;
- 	text-align:right;
-	font-size: 18px;
-	line-height: 18px;
-	color: #BBBBBB; /*GREEN*/
-	transition: .3s ease all; /*transicion para el efecto hoever*/	
-
-	
+#cerrar-popup {
+  /*boton para cerrar la pantalla */
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  line-height: 18px;
+  color: #bbbbbb; /*GREEN*/
+  transition: 0.3s ease all; /*transicion para el efecto hoever*/
 }
 
-#cerrar-popup:hover{
-	color: #000; /*Negro*/
-
+#cerrar-popup:hover {
+  color: #000; /*Negro*/
 }
 
-
-#inputdate{
-	margin-left: 20px;
+#inputdate {
+  margin-left: 1px;
 }
 
-#seleccion{
-	height: 23px;
-
+#seleccion {
+  height: 23px;
 }
 
-.popup form .boton_de_aceptar{
-	padding: 0, 20px; /*arriba y abajo 0, y hacia los lados 20px*/
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;  
-	color: #fff; /*Blanco*/
-	background-color: #5bc0de;
-    border-color: #46b8da;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: .3s ease all;
-	
-	
+.boton_de_aceptar {
+  padding: 0, 20px; /*arriba y abajo 0, y hacia los lados 20px*/
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff; /*Blanco*/
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s ease all;
 }
 
-.popup form .boton_de_aceptar:hover{
-	background-color: #00b8d4;
-
-
+.boton_de_aceptar:hover {
+  background-color: #00b8d4;
 }
-.popup.active{opacity: 1;}
-
-
-
-
-
+.popup.active {
+  opacity: 1;
+}
 
 /*.popup form .boton_de_aceptar{
 	padding: 0, 20px; /*arriba y abajo 0, y hacia los lados 20px
@@ -144,4 +134,3 @@ h3{
 	margin-top: 1px;
 
 }*/
-
